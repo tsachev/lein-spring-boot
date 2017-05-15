@@ -3,6 +3,7 @@
   :url "http://github.com/tsachev/spring-boot-lein"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.springframework.boot/spring-boot-loader-tools "1.5.3.RELEASE"]]
+  :dependencies [[org.springframework.boot/spring-boot-loader-tools "1.5.3.RELEASE"]
+                 [clojurewerkz/propertied "1.2.0"]]
   :min-lein-version "2.7.0"
   :eval-in-leiningen true)
