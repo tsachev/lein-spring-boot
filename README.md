@@ -1,4 +1,4 @@
-# spring-boot-lein
+# lein-spring-boot
 
 A Leiningen plugin that provides spring-boot tools functionality as tasks.
 
@@ -6,12 +6,12 @@ A Leiningen plugin that provides spring-boot tools functionality as tasks.
 
 FIXME: Use this for user-level plugins:
 
-Put `[spring-boot-lein "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your `:user`
+Put `[lein-spring-boot "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your `:user`
 profile.
 
 FIXME: Use this for project-level plugins:
 
-Put `[spring-boot-lein "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
+Put `[lein-spring-boot "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
 
 FIXME: and add an example usage that actually makes sense:
 

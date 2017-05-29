@@ -1,6 +1,6 @@
-(defproject spring-boot-lein "0.1.0-SNAPSHOT"
+(defproject lein-spring-boot "0.1.0-SNAPSHOT"
   :description "Leiningen plugin that provides spring boot tools functionality as tasks"
-  :url "http://github.com/tsachev/spring-boot-lein"
+  :url "http://github.com/tsachev/lein-spring-boot"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.springframework.boot/spring-boot-loader-tools "1.5.3.RELEASE"]

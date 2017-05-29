@@ -9,4 +9,4 @@ This change log follows the conventions of [keepachangelog.com](http://keepachan
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.com/tsachev/spring-boot-lein/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/tsachev/lein-spring-boot/compare/0.1.0...HEAD
