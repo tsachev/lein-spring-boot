@@ -4,6 +4,6 @@
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.springframework.boot/spring-boot-loader-tools "1.5.6.RELEASE"]
-                 [clojurewerkz/propertied "1.2.0"]]
+                 [clojurewerkz/propertied "1.3.0"]]
   :min-lein-version "2.7.0"
   :eval-in-leiningen true)
