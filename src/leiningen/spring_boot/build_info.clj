@@ -1,7 +1,8 @@
 (ns leiningen.spring-boot.build-info
   (:require [clojure.java.io :as io])
   (:import (org.springframework.boot.loader.tools BuildPropertiesWriter
-                                                  BuildPropertiesWriter$ProjectDetails)))
+                                                  BuildPropertiesWriter$ProjectDetails)
+           (java.time Instant)))
 
 (defn build-info
   "Generate a build-info.properties file for the current project"
@@ -9,4 +10,9 @@
   (-> (BuildPropertiesWriter.
         (io/file (:compile-path project) "META-INF/build-info.properties"))
       (.writeBuildProperties
-        (BuildPropertiesWriter$ProjectDetails. (:group project) (:name project) (:version project) (:name project) {}))))
+        (BuildPropertiesWriter$ProjectDetails. (:group project)
+                                               (:name project)
+                                               (:version project)
+                                               (:name project)
+                                               (Instant/now)
+                                               {}))))
