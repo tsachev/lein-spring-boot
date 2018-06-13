@@ -3,7 +3,8 @@
             [leiningen.core.project :as project]
             [leiningen.core.classpath :as classpath]
             [leiningen.core.main :as main]
-            [leiningen.jar :as jar]))
+            [leiningen.jar :as jar]
+            [clojure.string :as str]))
 
 (defn- libraries [project]
   (let [whitelisted (select-keys project project/whitelist-keys)
@@ -21,8 +22,9 @@
 (defn- init-info [project]
   {"initInfoProvides"         (:name project)
    "initInfoShortDescription" (:name project)
-   "initInfoDescription"      (:description project)})
-
+   "initInfoDescription"      (or (when-let [description (:description project)]
+                                    (str/replace description #"\s+" " "))
+                                  (:name project))})
 
 (defn repackage
   "Repackages existing jar and war archives into spring boot standalone jars"
